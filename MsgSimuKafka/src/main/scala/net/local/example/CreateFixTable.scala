@@ -7,6 +7,7 @@ import org.apache.kudu.ColumnSchema.ColumnSchemaBuilder
 import org.apache.kudu.client.CreateTableOptions
 import org.apache.kudu.spark.kudu.KuduContext
 import org.apache.kudu.{Schema, Type}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
 import org.joda.time.DateTime
 
@@ -45,7 +46,12 @@ object CreateFixTable {
     numberOfDays: Int,
     tabletReplicas: Int): Unit = {
 
-    val kuduContext = new KuduContext(kuduMaster)
+    val spark = SparkSession
+      .builder()
+      .appName("Spark-SQL kafka-kudu")
+      .config("spark.some.config.option", "some-value")
+      .getOrCreate()
+    val kuduContext = new KuduContext(kuduMaster, spark.sparkContext)
     if(kuduContext.tableExists(tableName )) {
       System.out.println("Deleting existing table with same name.")
       kuduContext.deleteTable(tableName)
