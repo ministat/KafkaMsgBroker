@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Building_a_Near_RealTime_Analytical_App" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1iQ1ntdY2H3Q8SBpi7NM9VxgnIz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CreateFixTable" type="Application" factoryName="Application">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="CreateFixTable" />
+      <module name="MsgSimuKafka" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="" />
+      <created>1601825171999</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601825171999</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="510" y="307" key="#CreateFixTable" timestamp="1601911398000">
+      <screen x="0" y="23" width="1792" height="1046" />
+    </state>
+    <state x="510" y="307" key="#CreateFixTable/0.23.1792.1046@0.23.1792.1046" timestamp="1601911398000" />
+    <state x="496" y="197" key="#Project_Structure" timestamp="1601911528802">
+      <screen x="0" y="23" width="1792" height="1046" />
+    </state>
+    <state x="496" y="197" key="#Project_Structure/0.23.1792.1046@0.23.1792.1046" timestamp="1601911528802" />
+    <state x="626" y="227" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601826060084">
+      <screen x="0" y="23" width="1792" height="1046" />
+    </state>
+    <state x="626" y="227" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1792.1046@0.23.1792.1046" timestamp="1601826060084" />
+    <state x="336" y="211" key="SettingsEditor" timestamp="1601911634422">
+      <screen x="0" y="23" width="1792" height="1046" />
+    </state>
+    <state x="336" y="211" key="SettingsEditor/0.23.1792.1046@0.23.1792.1046" timestamp="1601911634422" />
+    <state x="273" y="229" key="new project wizard" timestamp="1601826097187">
+      <screen x="0" y="23" width="1792" height="1046" />
+    </state>
+    <state x="273" y="229" key="new project wizard/0.23.1792.1046@0.23.1792.1046" timestamp="1601826097187" />
+  </component>
+</project>
