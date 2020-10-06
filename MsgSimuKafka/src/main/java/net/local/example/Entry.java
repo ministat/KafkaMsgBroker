@@ -1,3 +1,5 @@
+package net.local.example;
+
 public class Entry {
     public static void main(final String[] args) throws Exception {
         final ArgumentsParser parser = new ArgumentsParser();

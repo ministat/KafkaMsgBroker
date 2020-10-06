@@ -111,7 +111,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>cn.net.local.AnalyzeHistoryJsonLog</mainClass>
+                            <mainClass>net.local.example.MainEntry</mainClass>
                             <classpathPrefix>dep-jars</classpathPrefix>
                         </manifest>
                     </archive>

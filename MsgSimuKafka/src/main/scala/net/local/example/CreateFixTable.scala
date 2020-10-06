@@ -1,13 +1,14 @@
+package net.local.example
+
 import java.util.concurrent.TimeUnit
 
-import org.joda.time.DateTime
 import com.google.common.collect.ImmutableList
 import org.apache.kudu.ColumnSchema.ColumnSchemaBuilder
-import org.apache.kudu.{Type, Schema}
 import org.apache.kudu.client.CreateTableOptions
 import org.apache.kudu.spark.kudu.KuduContext
+import org.apache.kudu.{Schema, Type}
 import org.apache.spark.sql.types._
-
+import org.joda.time.DateTime
 
 object CreateFixTable {
 

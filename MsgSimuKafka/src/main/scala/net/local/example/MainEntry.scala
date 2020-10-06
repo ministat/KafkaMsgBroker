@@ -1,3 +1,4 @@
+package net.local.example
 
 object MainEntry {
   def main(args: Array[String]): Unit = {

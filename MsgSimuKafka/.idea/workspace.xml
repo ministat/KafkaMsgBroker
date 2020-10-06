@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="" />
+    <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/CreateFixTable.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/KuduFixDataStreamer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/MainEntry.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArgumentsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/ArgumentsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FIXGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/FIXGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CreateFixTable.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/KuduFixDataStreamer.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MainEntry.scala" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +26,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Building_a_Near_RealTime_Analytical_App" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -39,15 +52,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.local.example" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CreateFixTable" type="Application" factoryName="Application">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="CreateFixTable" />
+      <option name="MAIN_CLASS_NAME" value="net.local.example.CreateFixTable" />
       <module name="MsgSimuKafka" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +99,10 @@
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
     <state x="626" y="227" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1792.1046@0.23.1792.1046" timestamp="1601826060084" />
+    <state x="660" y="437" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601950077878">
+      <screen x="0" y="23" width="1792" height="1045" />
+    </state>
+    <state x="660" y="437" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1792.1045@0.23.1792.1045" timestamp="1601950077878" />
     <state x="336" y="211" key="SettingsEditor" timestamp="1601911634422">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
