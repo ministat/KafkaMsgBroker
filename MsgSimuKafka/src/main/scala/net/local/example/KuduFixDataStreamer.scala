@@ -3,7 +3,7 @@ package net.local.example
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.kudu.spark.kudu.KuduContext
 import org.apache.spark.sql.types._
-import org.apache.spark.sql.{Row, SQLContext}
+import org.apache.spark.sql.{Row, SQLContext, SparkSession}
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.kafka010.KafkaUtils
 import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
@@ -45,6 +45,20 @@ object KuduFixDataStreamer {
     }
   }
 */
+    var spark = SparkSession
+      .builder()
+      .appName("Kudu StockStreamer")
+      .config("spark.some.config.option", "some-value")
+      .getOrCreate()
+    if (runLocal) {
+      spark = SparkSession
+        .builder()
+        .appName("Kudu StockStreamer")
+        .config("spark.some.config.option", "some-value")
+        .config("spark.master", "local")
+        .getOrCreate()
+    }
+    /*
     val sparkConf = new SparkConf().setAppName("Kudu StockStreamer")
     if (runLocal) {
       println("Running Local")
@@ -52,10 +66,11 @@ object KuduFixDataStreamer {
     } else {
       println("Running Cluster")
     }
-    val sc = new SparkContext(sparkConf)
-    val sqlContext = new SQLContext(sc)
+    */
+    val sc = spark.sparkContext
+    val sqlContext = spark.sqlContext
     val ssc = new StreamingContext(sc, Seconds(5))
-    var kuduContext: KuduContext = new KuduContext(kuduMaster)
+    var kuduContext: KuduContext = new KuduContext(kuduMaster, sc)
     val broadcastSchema = sc.broadcast(schema)
 
     val topicSet = topics.split(",").toSet
