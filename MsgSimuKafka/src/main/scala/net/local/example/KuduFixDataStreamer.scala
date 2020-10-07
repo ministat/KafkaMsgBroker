@@ -79,7 +79,8 @@ object KuduFixDataStreamer {
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> brokers,
       "key.deserializer" -> classOf[StringDeserializer],
-      "value.deserializer" -> classOf[StringDeserializer]
+      "value.deserializer" -> classOf[StringDeserializer],
+      "group.id" -> s"kudu-stream-${System.currentTimeMillis()}"
     )
     val messages = KafkaUtils.createDirectStream[String, String](
       ssc, PreferConsistent,
