@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class QueryTable {
     SparkSession _spark;
     String _sql = "SELECT stocksymbol, max(orderqty) AS max_order," +
-    "CAST((CAST(transacttime/10000 AS int)*10000)/1000 as timestamp) AS 10_s_time_window FROM " +
+    "CAST((CAST(transacttime/10000 AS bigint)*10000)/1000 as timestamp) AS 10_s_time_window FROM " +
     "kafka_kudu WHERE transacttime > (CAST(unix_timestamp(to_utc_timestamp(now(),'PDT'))/10 AS bigint)*10 - 600)*1000 " +
             "AND transacttime < (CAST(unix_timestamp(to_utc_timestamp(now(),'PDT'))/10 AS bigint)*10 - 10)*1000 " + "" +
             "GROUP BY stocksymbol, 10_s_time_window ORDER BY stocksymbol, 10_s_time_window";

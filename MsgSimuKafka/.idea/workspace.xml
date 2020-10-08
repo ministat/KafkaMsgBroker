@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/FIXDataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/FIXDataServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/net/local/example/KuduFixDataStreamer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/KuduFixDataStreamer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

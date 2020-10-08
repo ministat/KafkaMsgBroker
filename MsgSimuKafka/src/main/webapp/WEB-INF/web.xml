@@ -6,11 +6,19 @@
    version="2.5">
   <servlet>
     <servlet-name>StockData</servlet-name>
-    <servlet-class>com.kuduscreencast.timeseries.FIXDataServlet</servlet-class>
+    <servlet-class>net.local.example.FIXDataServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>StockData</servlet-name>
     <url-pattern>/stockdata/*</url-pattern>
   </servlet-mapping>
+  <init-param>
+    <param-name>kuduMasters</param-name>
+    <param-value>localhost:7051,localhost:7151,localhost:7251</param-value>
+  </init-param>
+  <init-param>
+    <param-name>kuduTable</param-name>
+    <param-value>kafka-kudu</param-value>
+  </init-param>
 </web-app>
 

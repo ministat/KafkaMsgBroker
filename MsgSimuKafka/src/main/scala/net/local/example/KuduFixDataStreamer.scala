@@ -29,22 +29,7 @@ object KuduFixDataStreamer {
                               kuduMaster: String,
                               tableName: String,
                               runLocal: Boolean): Unit = {
-/*
-    if (args.length < 5) {
-      System.err.println(
-        """
-          |Usage: StockStreamer <brokers> <topics> <kuduMaster> <tableName> <localFlag>
-          |  <brokers> is a list of one or more Kafka brokers
-          |  <topic> kafka topic to consume from
-          |  <kuduMasters> is a list of one or more Kudu masters
-          |  <tableName> is the name of the kudu table
-          |  <localFlag> 'local' to run in local mode, else anything else for cluster
-          |
-        """.stripMargin)
-      System.exit(1)
-    }
-  }
-*/
+
     var spark = SparkSession
       .builder()
       .appName("Kudu StockStreamer")
@@ -58,15 +43,6 @@ object KuduFixDataStreamer {
         .config("spark.master", "local")
         .getOrCreate()
     }
-    /*
-    val sparkConf = new SparkConf().setAppName("Kudu StockStreamer")
-    if (runLocal) {
-      println("Running Local")
-      sparkConf.setMaster("local")
-    } else {
-      println("Running Cluster")
-    }
-    */
     val sc = spark.sparkContext
     val sqlContext = spark.sqlContext
     val ssc = new StreamingContext(sc, Seconds(5))
@@ -74,7 +50,6 @@ object KuduFixDataStreamer {
     val broadcastSchema = sc.broadcast(schema)
 
     val topicSet = topics.split(",").toSet
-    //val kafkaParams = Map[String,String]("metadata.broker.list"->brokers)
 
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> brokers,
@@ -103,7 +78,6 @@ object KuduFixDataStreamer {
     ssc.checkpoint("./checkpoint")
     ssc.start()
     ssc.awaitTermination()
-
   }
 
   /**
@@ -134,7 +108,6 @@ object KuduFixDataStreamer {
       case e:Exception => e.printStackTrace()
         null
     }
-
   }
 
 }
