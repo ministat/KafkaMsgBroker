@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/local/example/FIXDataServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/ArgumentsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/ArgumentsParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/net/local/example/CreateFixTable.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/CreateFixTable.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/net/local/example/MainEntry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/MainEntry.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
