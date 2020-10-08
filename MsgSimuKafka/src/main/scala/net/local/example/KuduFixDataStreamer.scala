@@ -85,7 +85,6 @@ object KuduFixDataStreamer {
     val messages = KafkaUtils.createDirectStream[String, String](
       ssc, PreferConsistent,
       Subscribe[String, String](topicSet, kafkaParams))
-    //val messages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](ssc, kafkaParams, topicSet)
     val parsed = messages.map(line => {
       parseFixEvent(line.value())
     })

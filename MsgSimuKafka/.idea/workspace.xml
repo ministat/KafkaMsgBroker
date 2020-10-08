@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e8b9dcd-d947-42e3-ba47-62c07fd674c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/QueryTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/local/example/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/local/example/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/net/local/example/KuduFixDataStreamer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/net/local/example/KuduFixDataStreamer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="net.local.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Entry">
     <configuration name="CreateFixTable" type="Application" factoryName="Application">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="net.local.example.CreateFixTable" />
@@ -63,6 +64,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Entry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.local.example.Entry" />
+      <module name="MsgSimuKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.local.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Entry" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
