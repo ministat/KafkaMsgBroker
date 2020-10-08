@@ -75,5 +75,6 @@ object CreateFixTable {
     kuduContext.createTable(tableName, schema, Seq("transacttime","stocksymbol","clordid"),options)
 
     System.out.println("Created new Kudu table " + tableName + " with " + numberOfHashPartitions + " hash partitions and " + numberOfDays + " date partitions. ")
+    spark.close()
   }
 }

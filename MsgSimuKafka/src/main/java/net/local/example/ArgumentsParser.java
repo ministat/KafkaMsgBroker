@@ -11,7 +11,7 @@ public class ArgumentsParser {
     @Option(name="-t", aliases="--kafkatopic", required=true, usage="Specify the kafka topic")
     public String kafkatopic;
 
-    @Option(name="-m", aliases="--mode", usage="producer: 1, consumer: 2, create table: 3, default is 1")
+    @Option(name="-m", aliases="--mode", usage="producer: 1, consumer: 2, create table: 3, query kudu table: 4, default is 1")
     public int mode = 1;
 
     @Option(name="-a", aliases="--kudumasters", required=true, usage="Specify the kudu masters")

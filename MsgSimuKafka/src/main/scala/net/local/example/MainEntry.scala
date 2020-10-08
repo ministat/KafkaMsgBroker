@@ -23,6 +23,10 @@ object MainEntry {
         parser.hashpartitions,
         parser.numberofdays,
         parser.tablereplicas)
+      case 4 =>
+        val queryTable = new QueryTable(parser.kuduMaster, parser.tableName)
+        val result = queryTable.Query();
+        System.out.println(result)
     }
   }
 }
