@@ -46,7 +46,7 @@ public class QueryTable {
         Dataset<String> formattedResult = result.map(
                 (MapFunction<Row, String>)
                         row -> {
-                            if (row.size() > 0) {
+                            if (row.size() >= 3) {
                                 return row.getString(0) + "," + row.getInt(1) + "," + row.getTimestamp(2);
                             } else {
                                 return "";
