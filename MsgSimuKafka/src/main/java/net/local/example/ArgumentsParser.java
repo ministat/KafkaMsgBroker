@@ -32,6 +32,9 @@ public class ArgumentsParser {
     @Option(name="-l", aliases="--uselocal", usage="Run spark on local or cluster, default is local")
     public Boolean uselocal = true;
 
+    @Option(name="-s", aliases="--secondsbefore", usage="Specify the start window in seconds for table query, default is 600 seconds")
+    public int secondsBefore = 600;
+
     public boolean parseArgs(final String[] args) {
         final CmdLineParser parser = new CmdLineParser(this);
         if (args.length < 1) {

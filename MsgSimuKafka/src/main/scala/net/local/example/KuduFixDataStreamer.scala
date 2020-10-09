@@ -70,6 +70,7 @@ object KuduFixDataStreamer {
 
     sys.ShutdownHookThread {
       println("Gracefully stopping Spark Streaming Application")
+      spark.close();
       ssc.stop(true, true)
       println("Application stopped")
     }

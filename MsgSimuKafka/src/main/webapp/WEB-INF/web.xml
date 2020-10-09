@@ -7,18 +7,26 @@
   <servlet>
     <servlet-name>StockData</servlet-name>
     <servlet-class>net.local.example.FIXDataServlet</servlet-class>
+    <init-param>
+      <param-name>kuduMasters</param-name>
+      <param-value>localhost:7051,localhost:7151,localhost:7251</param-value>
+    </init-param>
+    <init-param>
+      <param-name>kuduTable</param-name>
+      <param-value>kafka-kudu</param-value>
+    </init-param>
+    <init-param>
+      <param-name>sparkMaster</param-name>
+      <param-value>local</param-value>
+    </init-param>
+    <init-param>
+      <param-name>timeBefore</param-name>
+      <param-value>600</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>StockData</servlet-name>
     <url-pattern>/stockdata/*</url-pattern>
   </servlet-mapping>
-  <init-param>
-    <param-name>kuduMasters</param-name>
-    <param-value>localhost:7051,localhost:7151,localhost:7251</param-value>
-  </init-param>
-  <init-param>
-    <param-name>kuduTable</param-name>
-    <param-value>kafka-kudu</param-value>
-  </init-param>
 </web-app>
 

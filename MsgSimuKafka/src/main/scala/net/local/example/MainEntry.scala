@@ -24,8 +24,8 @@ object MainEntry {
         parser.numberofdays,
         parser.tablereplicas)
       case 4 =>
-        val queryTable = new QueryTable(parser.kuduMaster, parser.tableName)
-        val result = queryTable.Query();
+        val queryTable = new QueryTable(parser.kuduMaster, parser.tableName, "local")
+        val result = queryTable.Query(parser.secondsBefore);
         System.out.println(result)
     }
   }

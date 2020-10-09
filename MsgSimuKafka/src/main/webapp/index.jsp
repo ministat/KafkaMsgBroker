@@ -25,6 +25,7 @@ pageEncoding="US-ASCII"%>
       /** to do: use Plotly.restyle('myChart', traces); to update instead of refresh chart **/
       var plotCreated = false;
       var x = [], y = [], currentSymbol = '';
+      console.log(allRows.length);
       for (var i=0; i<allRows.length; i++) {
         row = allRows[i];
         if(row['symbol'] != currentSymbol) {

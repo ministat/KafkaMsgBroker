@@ -12,7 +12,7 @@
         <scala.version>2.11.12</scala.version>
         <spark.version>2.4.5</spark.version>
         <kafka.version>2.6.0</kafka.version>
-        <jettyVersion>9.4.32.v20200930</jettyVersion>
+        <jettyVersion>7.6.10.v20130312</jettyVersion>
     </properties>
 
     <dependencies>
@@ -81,7 +81,7 @@
                     <execution><goals><goal>java</goal></goals></execution>
                 </executions>
                 <configuration>
-                    <mainClass>org.example.HelloWorld</mainClass>
+                    <mainClass>net.local.example.FIXDataServlet</mainClass>
                 </configuration>
             </plugin>
             <plugin>
